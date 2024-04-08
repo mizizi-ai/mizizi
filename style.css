@@ -1,0 +1,223 @@
+body {
+    font-family: helvetica;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+#home {
+    position: relative;
+    min-height: 400px; /* Ensure a minimum hero height */
+}
+
+#home .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; 
+    max-width: 800px; /* Example - adjust as needed */
+    margin: 0 auto;
+}
+
+#home h2 { 
+    font-size: 36px;  
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#home .primary-button {
+    background-color: #FFC300;  /* Example accent color - use your own */
+    color: #333; /* Dark text on bright background */
+    padding: 15px 30px;
+    font-size: 16px;
+}
+  header {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    color: #000;
+  }
+  
+  main {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  main p {
+    margin-bottom: 10px;
+  }
+  
+  main ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  main li {
+    margin-bottom: 10px;
+  }
+  
+  main a {
+    text-decoration: none;
+  }
+  
+  main a:hover {
+    color: #000;
+  }
+      
+  #carousel {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  #carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px;
+}
+
+.service-card {
+    border: 1px solid #ddd; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.service-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+.search-bar {
+    margin-bottom: 20px;
+    display: flex; /* For side-by-side input and button */
+}
+
+.search-bar input[type="text"] {
+   flex: 1; /* To make it expand */
+   padding: 10px;
+   border: 1px solid #ddd;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #000; /* Match your color scheme */
+    color: #fff; 
+    border: none;
+    padding: 10px 15px;
+} 
+
+.kb-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.kb-category ul {
+    list-style-type: disc; /* Or change the bullet style */
+} 
+.learn-more {
+    display: block;
+    background-color: black; /* Consider your Mizizi AI color */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.demo-tabs {
+    margin-bottom: 20px;
+}
+
+.demo-tab {
+     background-color: #f0f0f0;  
+     border: none;
+     padding: 10px 15px;
+     margin-right: 5px;
+     cursor: pointer;
+}
+
+.demo-tab.active {
+    background-color: blackColor; /* Or your Mizizi AI accent color */
+    color: #fff;
+}
+
+.demo-content {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+.login-message {
+    margin-bottom: 20px;
+}
+
+#login-form, #dashboard-content {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-form form {
+    /* Style your form fields and buttons */
+} 
+  section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  section li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+ 
