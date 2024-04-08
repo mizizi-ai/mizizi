@@ -1,4 +1,4 @@
- Mizizi AI Web Application
+# Mizizi AI Web Application
 
 **Project Overview**
 
@@ -32,17 +32,3 @@ Mizizi AI is a pioneering Kenyan company dedicated to harnessing the power of ar
 * **Contact Page**
     * Interactive contact form with potential AI-powered routing.
     * Company address and contact details. 
-
-**Technical Notes**
-
-* **Frontend:** HTML, CSS, JavaScript
-* **Backend:** [Choose your language - Python, Node.js, etc.]
-* **Deployment:** Google Cloud Code (App Engine, Cloud Functions, Cloud Run)
-
-**Future Development Considerations**
-
-* **Expanded AI demos with increased complexity over time.**
-* **Robust client dashboard features.**
-* **Seamless integration with internal CRM and sales tools.**
-
-**Contact**
