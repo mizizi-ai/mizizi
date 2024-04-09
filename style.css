@@ -1,223 +1,241 @@
 body {
-    font-family: helvetica;
-    margin: 0;
-    padding: 0;
-    color: white;
-  }
-
-#home {
-    position: relative;
-    min-height: 400px; /* Ensure a minimum hero height */
+  font-family: helvetica;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
-#home .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff; 
-    max-width: 800px; /* Example - adjust as needed */
-    margin: 0 auto;
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items evenly */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
-#home h2 { 
-    font-size: 36px;  
-    margin-bottom: 15px;
+/* Mizizi AI Title */
+h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  flex-grow: 1; /* Allow title to expand and fill available space */
 }
 
-#home p {
-    font-size: 18px;
-    margin-bottom: 30px;
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-#home .primary-button {
-    background-color: #FFC300;  /* Example accent color - use your own */
-    color: #333; /* Dark text on bright background */
-    padding: 15px 30px;
-    font-size: 16px;
+/* Dropdown container (hidden by default) */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-  header {
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-  
-  header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  header nav {
-    float: right;
-  }
-  
-  header nav a {
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-  }
-  
-  header nav a:hover {
-    color: #000;
-  }
-  
-  main {
-    margin-top: 20px;
-    padding: 20px;
-  }
-  
-  main h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  main p {
-    margin-bottom: 10px;
-  }
-  
-  main ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  main li {
-    margin-bottom: 10px;
-  }
-  
-  main a {
-    text-decoration: none;
-  }
-  
-  main a:hover {
-    color: #000;
-  }
-      
-  #carousel {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-  }
-  
-  #carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 30px;
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+main {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main li {
+  margin-bottom: 10px;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main a:hover {
+  color: #000;
+}
+
+#carousel {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+#carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .service-card {
-    border: 1px solid #ddd; 
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
 }
 
 .service-card img {
-    width: 80px;
-    margin-bottom: 15px;
+  width: 80px;
+  margin-bottom: 15px;
 }
+
+.learn-more {
+  display: block;
+  background-color: black;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  background-color: #333; /* Darken button color on hover */
+}
+}
+
 .search-bar {
-    margin-bottom: 20px;
-    display: flex; /* For side-by-side input and button */
+  margin-bottom: 20px;
+  display: flex;
 }
 
 .search-bar input[type="text"] {
-   flex: 1; /* To make it expand */
-   padding: 10px;
-   border: 1px solid #ddd;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
 }
 
 .search-bar button[type="submit"] {
-    background-color: #000; /* Match your color scheme */
-    color: #fff; 
-    border: none;
-    padding: 10px 15px;
-} 
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+}
 
 .kb-categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .kb-category ul {
-    list-style-type: disc; /* Or change the bullet style */
-} 
-.learn-more {
-    display: block;
-    background-color: black; /* Consider your Mizizi AI color */
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
+  list-style-type: disc;
 }
+
+.learn-more {
+  display: block;
+  background-color: black;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .demo-tabs {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .demo-tab {
-     background-color: #f0f0f0;  
-     border: none;
-     padding: 10px 15px;
-     margin-right: 5px;
-     cursor: pointer;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 .demo-tab.active {
-    background-color: blackColor; /* Or your Mizizi AI accent color */
-    color: #fff;
+  background-color: black;
+  color: #fff;
 }
 
 .demo-content {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-}
-.login-message {
-    margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-#login-form, #dashboard-content {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
+.login-message {
+  margin-bottom: 20px;
 }
+
+#login-form,
+#dashboard-content {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
 .contact-info {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-info p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .contact-form form {
-    /* Style your form fields and buttons */
-} 
-  section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  section li {
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-  }
- 
+  /* Style your form fields and buttons */
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
