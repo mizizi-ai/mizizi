@@ -42,3 +42,4 @@ To run the Mizizi AI web application locally, follow these steps:
 * Configure environment variables as needed.
 * Run the application using npm start or yarn start.
 * Access the application at http://localhost:PORT in your web browser.
+# mizizi_ai
