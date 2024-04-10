@@ -38,7 +38,7 @@ Mizizi AI is a pioneering Kenyan company dedicated to harnessing the power of ar
 To run the Mizizi AI web application locally, follow these steps:
 
 * Clone this repository to your local machine.
-* Install dependencies using npm install or yarn install.
+* Install dependencies using npm install.
 * Configure environment variables as needed.
 * Run the application using npm start or yarn start.
 * Access the application at http://localhost:PORT in your web browser.
