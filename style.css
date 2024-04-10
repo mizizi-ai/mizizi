@@ -84,6 +84,27 @@ hero .intro {
   border-radius: 50%;
   margin-right: 10px;
 }
+#services {
+  padding: 40px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; 
+}
+
+.service-card {
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.service-card img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
 /* If you want to highlight specific services */
 .service-card:nth-child(1), 
 .service-card:nth-child(4) { /* Example: Target first & fourth card */
@@ -178,7 +199,7 @@ hero .intro {
 
 #capture-form input[type="email"] {
   padding: 10px 20px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 5px;
   margin-right: 10px;
   font-size: 1em;
@@ -186,18 +207,19 @@ hero .intro {
 
 #capture-form button {
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  background-color:black;
+  color:black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 #capture-form button:hover {
-  background-color: #444;
+  background-color: black;
+}
 /* Dropdown Button */
 .dropbtn {
-  background-color: transparent;
+  background-color:black;
   color: white;
   border: none;
   cursor: pointer;
@@ -411,4 +433,128 @@ footer {
   background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
+}
+#knowledge-base {
+  padding: 40px 0;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  width: 100%; 
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.kb-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.kb-section {
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+#ai-demos {
+  padding: 40px 0;
+}
+
+.demo-card {
+  margin-bottom: 20px;
+  background-color:black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+#auth-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#login-form,
+#signup-form {
+  display: inline-block; /* To position them side-by-side */
+  width: 40%; /* Adjust as needed */
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#subscription-billing {
+  padding: 40px 0;
+}
+
+.current-plan, .available-plans, .billing-history, .payment-info {
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.available-plans {
+  /* Style to display plans side-by-side or as a list */
+}
+/* Additions to your existing CSS */
+.dropdown {
+  position: relative; /* To contain the dropdown menu */
+}
+
+.dropdown-toggle {
+  background-color: rgb(16, 15, 15); /* Example color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none; /* Initially hidden */ 
+  position: absolute;
+  background-color: #fff; 
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+  color: #333;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+/* Show menu on hover */
+.dropdown-menu a:hover {
+    background-color: black;  
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+#usage-tracking, 
+#analytics-reports, 
+#subscription-billing {
+    display: none; 
+}
+.active-section {
+  display: block;
+}
+#contact {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact-info, .contact-form {
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  background-color:black;
+  padding: 20px;
+  border-radius: 5px;
 }
