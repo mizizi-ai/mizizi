@@ -1,83 +1,69 @@
-// Lead capture form
-const leadCaptureForm = document.getElementById("lead-capture-form");
 
-leadCaptureForm.addEventListener("submit", (e) => {
-  e.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  const data = {
-    name,
-    email,
-    message,
-  };
-
-  fetch("/submit-lead-capture-form", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      alert("Your message has been sent!");
-    })
-    .catch((error) => {
-      alert("An error occurred. Please try again.");
-    });
+// Event listeners for interactive buttons
+// Example:
+document.getElementById('learnMoreBtn').addEventListener('click', function() {
+  // Code to execute when button is clicked 
 });
+async function fetchAINews() {
+  const apiKey = "YOUR_NEWSAPI_KEY"; // Replace with your actual key
+  const url = `https://newsapi.org/v2/everything?q=artificial intelligence&apiKey=${ee9ef50566ff4c7fa3754ef2713e8f1a}`;
 
-// Tab switching functionality
-const demoTabs = document.querySelectorAll('.demo-tab');
-const demoContents = document.querySelectorAll('.demo-content');
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayNews(data.articles); // We'll create this function next
+  } catch (error) {
+    console.error("Error fetching news:", error);
+  }  
+}
 
-demoTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const targetId = tab.dataset.demoId;
-        
-        demoContents.forEach(content => {
-            content.style.display = content.id === targetId ? 'block' : 'none';
-        });
+function displayNews(articles) {
+  const newsItemsContainer = document.querySelector(".news-items"); 
+  articles.forEach(article => {
+    const newsItem = document.createElement("div"); 
+    newsItem.classList.add("news-item");
+    newsItem.innerHTML = `
+       <img src="${article.urlToImage}" alt="${article.title}">
+       <h3>${article.title}</h3>
+       <p class="excerpt">${article.description}</p>
+       <a href="${article.url}" class="read-more" target="_blank">Read More</a>
+    `;
+    newsItemsContainer.appendChild(newsItem);
+  });
+}
 
-        demoTabs.forEach(t => {
-            t.classList.remove('active');
-        });
+fetchAINews(); // Call the function to fetch news on page load. 
+// Install dotenv (using npm)
 
-        tab.classList.add('active');
-    });
-});
+// Update your script.js
+require('dotenv').config(); // Load environment variables
 
-// Contact form submission
-const contactForm = document.getElementById("contact-form");
+async function fetchAINews() {
+  const apiKey = process.env.NEWS_API_KEY;  
+  // ... rest of your code remains the same 
+}
+async function fetchTeamData() {
+  const response = await fetch('db.json');
+  const teamData = await response.json();
+  displayTeamMembers(teamData); 
+}
 
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+function displayTeamMembers(teamData) {
+    const teamMembersContainer = document.querySelector('.team-members'); 
+    teamData.forEach(member => {
+      const teamMember = document.createElement('div');
+      teamMember.classList.add('team-member'); 
+      teamMember.innerHTML = ` 
+        <img src="${member.image}" alt="${member.name}">
+        <h3>${member.name}</h3>
+        <p>${member.title}</p>
+        <ul class="social-links">
+            <li><a href="${member.linkedin}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      `;
+      teamMembersContainer.appendChild(teamMember); 
+   });
+}
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  const data = {
-    name,
-    email,
-    message,
-  };
-
-  fetch("/submit-contact-form", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      alert("Your message has been sent!");
-    })
-    .catch((error) => {
-      alert("An error occurred. Please try again.");
-    });
-});
+fetchTeamData(); // Call the function on page load

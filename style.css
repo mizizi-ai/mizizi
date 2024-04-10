@@ -1,5 +1,8 @@
 body {
-  font-family: helvetica;
+  font-family: sans-serif;
+  background-color: #000;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
   color: white;
@@ -9,7 +12,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Align items evenly */
+  justify-content: space-between; 
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
@@ -19,9 +22,179 @@ h1 {
   margin: 0;
   font-size: 24px;
   color: white;
-  flex-grow: 1; /* Allow title to expand and fill available space */
+  flex-grow: 1; /
+  text-align: center;
+  
+}
+/* Hero Section */
+hero {
+  background-image: url("assets/3.png"); /* Background image */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text within the hero */
 }
 
+hero .container {
+  max-width: 800px; /* Limit text width for readability */
+}
+
+hero h1 {
+  font-size: 3rem;  /* Larger heading */
+  margin-bottom: 15px;
+}
+
+hero .intro {
+  margin-bottom: 30px;
+}
+#testimonials {
+  background-color#070707; /* Slightly lighter shade */
+  padding: 40px 0;
+}
+
+#testimonials h2 {
+  color: #f3efef;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.testimonial-item {
+  background-color:black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto; /* Center within carousel */
+}
+
+.client-info {
+  display:center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.client-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* If you want to highlight specific services */
+.service-card:nth-child(1), 
+.service-card:nth-child(4) { /* Example: Target first & fourth card */
+    background-color:black; /* Your accent color */
+    color: #fff; 
+}
+#news {
+  padding: 40px 0;
+  background-color:black; /* Light background for separation */
+}
+
+.news-items {
+  display: flex; /* Arrange news items horizontally */
+  justify-content: space-between; /* Even spacing */
+  flex-wrap: wrap; /* Wrap to a new line if needed */
+}
+
+.news-item {
+  width: 30%; /* Adjust based on how many items per row */
+  margin-bottom: 20px;
+  background:black;
+  padding: 15px;
+}
+
+.news-item img {
+  max-width: 100%; 
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.excerpt {
+  margin-bottom: 10px;
+}
+#team {
+  padding: 40px 0;
+  background-color: #000000; /* Light background for differentiation */
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap; /* Allow members to wrap to a new line */
+  justify-content: space-around;
+}
+
+.team-member {
+  text-align: center;
+  background:black;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.team-member img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  color:white;
+} 
+#lead-capture {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#lead-capture h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#lead-capture p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+#capture-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#capture-form input[type="email"] {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+#capture-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#capture-form button:hover {
+  background-color: #444;
 /* Dropdown Button */
 .dropbtn {
   background-color: transparent;
