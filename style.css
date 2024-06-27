@@ -51,8 +51,14 @@ hero h1 {
 hero .intro {
   margin-bottom: 30px;
 }
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
 #testimonials {
-  background-color#070707; /* Slightly lighter shade */
+  background-color: black; /* Slightly lighter shade */
   padding: 40px 0;
 }
 
@@ -62,7 +68,20 @@ hero .intro {
   margin-bottom: 30px;
 }
 
-
+.gallery-container {
+  text-align: center;
+  margin: 20px;
+}
+.gallery-img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.nav-btn {
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+}
 .testimonial-item {
   background-color:black;
   padding: 20px;
@@ -176,7 +195,7 @@ hero .intro {
   color:white;
 } 
 #lead-capture {
-  background-color: #f0f0f0;
+  background-color: black;
   padding: 40px 0;
   text-align: center;
 }
@@ -207,7 +226,7 @@ hero .intro {
 
 #capture-form button {
   padding: 10px 20px;
-  background-color:black;
+  background-color:white;
   color:black;
   border: none;
   border-radius: 5px;
@@ -217,7 +236,19 @@ hero .intro {
 #capture-form button:hover {
   background-color: black;
 }
-/* Dropdown Button */
+.download-pdf-btn {
+  display: inline-block;
+  margin-top: 20px; /* Adjust as needed */
+  padding: 10px 20px;
+  background-color: white; /* Bootstrap primary color for example */
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-pdf-btn:hover {
+  background-color: white; /* Darker shade for hover effect */
+}/* Dropdown Button */
 .dropbtn {
   background-color:black;
   color: white;
@@ -557,4 +588,51 @@ footer {
   background-color:black;
   padding: 20px;
   border-radius: 5px;
+}
+/* Base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header h1 {
+  color: #fff;
+}
+
+.dropdown-content, .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a, .dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container, header, main {
+    padding: 0 20px;
+  }
+
+  .dropdown-content, .dropdown-menu {
+    min-width: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1, main h2, main h3 {
+    font-size: 1.5em;
+  }
 }

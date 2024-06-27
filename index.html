@@ -32,7 +32,12 @@
             <button id="learnMoreBtn">Learn More</button> 
         </div>
         </div> </section>
-
+        <div class="gallery-container">
+            <img src="assets/1.png" alt="Gallery Image" class="gallery-img" id="galleryImg">
+            <br>
+            <button class="nav-btn" id="prevBtn">Previous</button>
+            <button class="nav-btn" id="nextBtn">Next</button>
+          </div>
         <section id="testimonials">
             <div class="container"> 
                 <h2>What Our Client Says</h2> 
@@ -56,36 +61,29 @@
 
             <section id="services">
                 <div class="container">
-                    <h2>Our AI Solutions</h2>
+                    <h2>Our Services</h2>
                     <div class="services-grid">
                         <div class="service-card">
                             <img src="assets/Mizizi Logo.png" alt="AI Policy Advisory">
-                            <h3>AI Policy Advisory</h3>
+                            <h3>AI Software Packages</h3>
                         
                         </div>
+
                         <div class="service-card">
                             <img src="assets/Mizizi Logo.png" alt="AI Sensitisation">
-                            <h3>AI Sensitization</h3>
+                            <h3>Rafiki customizablw LLM</h3>
                             
                         </div>
+
                         <div class="service-card">
                             <img src="assets/Mizizi Logo.png" alt="AI Consulting">
-                            <h3>AI Consulting</h3>
+                            <h3>AI Training & Workshops</h3>
                             
                         </div>
-                        <div class="service-card">
-                            <img src="assets/Mizizi Logo.png" alt="AI Research">
-                            <h3>AI Research</h3>
-                            <
-                        </div>
-                        <div class="service-card">
-                            <img src="assets/Mizizi Logo.png" alt="AI Automation Packages">
-                            <h3>AI Automation Packages</h3>
-                            
-                        </div>
+
                         <div class="service-card">
                             <img src="assets/Mizizi Logo.png" alt="AI Software Packages">
-                            <h3>AI Software Packages</h3>
+                            <h3>Ai Policy Advisory</h3>
                             
                         </div>
                     </div>
@@ -99,13 +97,18 @@
                     <h2>AI News & Insights</h2>
                     <div class="news-items">
                         <div class="news-item">
-                            <a href="https://www.linkedin.com/posts/amanikituto_the-rise-of-ai-why-every-business-needs-activity-71830240-0M8x?utm_source=share&utm_medium=member_desktop" target="_blank" style="color: white;">...</a>
+                            <img src="assets/me.jpg" alt="News Item">
+                            <a href="https://www.linkedin.com/posts/amanikituto_the-rise-of-ai-why-every-business-needs-activity-71830240-0M8x?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener" title="Read More" style="color: white;">Read More</a>
                                     <h3>The Rise of AI: Why Every Business Needs to Pay Attention</h3>
                                     <p class="excerpt">A thought provoking look at how AI is changing the Kenyan business landscape...</p>
                             </a> </div>
                         
                         <div class="news-item">
-                            </div> 
+                            <img src="assets/me.jpg" alt="News Item">
+                            <a href="https://www.linkedin.com/posts/amanikituto_the-rise-of-ai-why-every-business-needs-activity-71830240-0M8x?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener" title="Read More" style="color: white;">Read More</a>
+                                    <h3>The Rise of AI: Why Every Business Needs to Pay Attention</h3>
+                                    <p class="excerpt">A thought provoking look at how AI is changing the Kenyan business landscape...</p>
+                            </a> </div>
                     
                     </div>
                 </div>
@@ -124,29 +127,78 @@
                                 <li><a href="https://www.linkedin.com/in/amanikituto/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
                             </ul>
                         </div>
+                        <div class="team-member">
+                            <img src="" alt="Team Member Name">
+                            <h3>Sammy Kariuki</h3>
+                            <p>CTO</p>
+                            <ul class="social-links">
+                                <li><a href="https://www.linkedin.com/in/sammy-kimani/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                            </ul>
                         </div>
+                        <div class="team-member">
+                            <img src="" alt="Team Member Name">
+                            <h3>Joy Ogutu</h3>
+                            <p>Ai Engineer</p>
+                            <ul class="social-links">
+                                <li><a href="https://www.linkedin.com/in/joy-victoria-ogutu/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                            </ul>
+                        </div>
+                        <div class="team-member">
+                            <img src="" alt="Team Member Name">
+                            <h3>Bruce Serede</h3>
+                            <p>Software Engineer</p>
+                            <ul class="social-links">
+                                <li><a href="https://www.linkedin.com/in/bruceserede/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="" alt="Team Member Name">
+                            <h3>Amariah Kamau</h3>
+                            <p>Software Engineer</p>
+                            <ul class="social-links">
+                                <li><a href="https://www.linkedin.com/in/amariah-kamau-3156412a6/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                            </ul>
+                        </div>
+                        <div class="team-member">
+                            <img src="" alt="Team Member Name">
+                            <h3>Eunice Njomo</h3>
+                            <p>Head of International Affairs</p>
+                            <ul class="social-links">
+                                <li><a href="https://www.linkedin.com/in//" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+                            </ul>
+                        </div>
+                         
             </div>
             </section>
             
             <section id="lead-capture">
                 <div class="container">
-                  <h2>Grow with AI. Get the Latest Insights.</h2>
-                  <p>Subscribe to our newsletter for cutting-edge AI news, exclusive resources, and expert tips to stay ahead of the curve.</p>
-                  <form id="capture-form">
-                    <input type="email" name="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe</button>
-                  </form>
+                    <h2>Grow with AI. Get the Latest Insights.</h2>
+                    <p>Subscribe to our newsletter for cutting-edge AI news, exclusive resources, and expert tips to stay ahead of the curve.</p>
+                    <form id="capture-form">
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                     <!-- Downloadable PDF link -->
+  <a href="assets/Mizizi Pitch Deck.pdf" download="YourDocumentName.pdf" class="download-pdf-btn">Download PDF</a>
                 </div>
-              </section>
-              <div class="container">
-                <h2>Get Started</h2>
-                <div id="login-form">
-                    <h3>Login</h3>
+            </section>
+            <section id="get-started">
+                <div class="container">
+                    <h2>Get Started</h2>
+                    <div id="login-form">
+                        <h3>Login</h3>
+                        <!-- Login form content -->
                     </div> 
-                <div id="signup-form">
-                    <h3>Create Account</h3> 
+                    <div id="signup-form">
+                        <h3>Create Account</h3> 
+                        <!-- Signup form content -->
                     </div>
+                </div>
+            </section>
             
- </main>                
+ </main>   
+ <script src="script.js"></script>             
 </body>
 </html>
